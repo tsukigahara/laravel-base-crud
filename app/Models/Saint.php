@@ -12,6 +12,6 @@ class Saint extends Model
     private $id;
     private $name;
     private $place_of_birth;
-    private $given_blessing;
+    private $blessing_date;
     private $miracles_count;
 }
