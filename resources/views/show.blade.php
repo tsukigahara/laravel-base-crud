@@ -13,13 +13,10 @@
 </head>
 
 <body>
-    <ul>
-        @foreach ($saints as $saint)
-        <a href="/saint/{{$saint -> id}}">
-            <li>{{$saint -> name}} - {{$saint -> miracles_count}}</li>
-        </a>
-        @endforeach
-    </ul>
+    {{$saints->name}} <br>
+    {{$saints->place_of_birth}} <br>
+    {{$saints->blessing_date}} <br>
+    {{$saints->miracles_count}} <br>
 </body>
 
 </html>
