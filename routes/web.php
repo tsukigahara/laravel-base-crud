@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [MainController::class, 'index']);
+// Route::get('saints', [MainController::class, 'index']);
 
-Route::get('/saint/{id}', [MainController::class, 'show']);
-//come fa a passare id a MainController/show()??
+// Route::get('saints/saint', [MainController::class, 'show']);
+// //come fa a passare id a MainController/show()??
+//  Route::resource('/saint/')
+
+Route::resource('saints', MainController::class);
