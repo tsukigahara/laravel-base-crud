@@ -16,8 +16,7 @@ class MainController extends Controller
     {
         // get info from model
         //ritorna tutte le righe della tabella saint
-        $saints = Saint::all();
-        //è una classe?
+        $saints = Saint::orderBy('id', 'desc')->get();
         // Come fa larval ha capire da quale tabella deve prendere i dati????
 
 
